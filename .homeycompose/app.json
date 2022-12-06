@@ -10,7 +10,8 @@
     "en": "Nibe myUplink"
   },
   "description": {
-    "en": "Connect you Nibe devices that uses the myUplink API."
+    "en": "Connect you Nibe devices that uses the myUplink API.",
+    "sv": "Anslut din Nibe värmepump som har support för myUplink."
   },
   "category": [
     "climate"
