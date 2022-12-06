@@ -4,33 +4,34 @@
     "en": "myUplink"
   },
   "class": "other",
-  "capabilities": ["hwBoost",
-                   "smartPriceAdaption",
-                   "priority",
-                   "measure_power",
-                   "internalAddon",
-                   "feedTemperature",
-                   "hwTopTemperature",
-                   "brineInTemperature",
-                   "brineOutTemperature",
-                   "brinePumpSpeed",
-                   "calculatedSupplyTemperature",
-                   "condenserTemperature",
-                   "currentCompressorFrequency",
-                   "degreeMinutes",
-                   "dischargeTemperature",
-                   "flowSensor",
-                   "heatingEnergyCompressor",
-                   "heatingEnergyIncludingAddon",
-                   "heatingMediaPumpSpeed",
-                   "hwChargingTemperature",
-                   "hwEnergyCompressor",
-                   "hwEnergyIncludingAddon",
-                   "liquidLineTemperature",
-                   "outdoorTemperature",
-                   "returnLineTemperature",
-                   "suctionGasTemperature"
-                  ],
+  "capabilities": [
+    "hwBoost",
+    "smartPriceAdaption",
+    "priority",
+    "measure_power",
+    "internalAddon",
+    "feedTemperature",
+    "hwTopTemperature",
+    "brineInTemperature",
+    "brineOutTemperature",
+    "brinePumpSpeed",
+    "calculatedSupplyTemperature",
+    "condenserTemperature",
+    "currentCompressorFrequency",
+    "degreeMinutes",
+    "dischargeTemperature",
+    "flowSensor",
+    "heatingEnergyCompressor",
+    "heatingEnergyIncludingAddon",
+    "heatingMediaPumpSpeed",
+    "hwChargingTemperature",
+    "hwEnergyCompressor",
+    "hwEnergyIncludingAddon",
+    "liquidLineTemperature",
+    "outdoorTemperature",
+    "returnLineTemperature",
+    "suctionGasTemperature"
+  ],
   "platforms": [
     "local"
   ],
@@ -42,8 +43,6 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
   },
-  
-  
   "pair": [
     {
       "id": "login_oauth2",
@@ -67,5 +66,4 @@
       "template": "login_oauth2"
     }
   ]
-  
 }

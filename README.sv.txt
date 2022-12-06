@@ -1,0 +1,1 @@
+Koppla din Nibe Bergvärmepump i S-serien som nyttjar myUplink.

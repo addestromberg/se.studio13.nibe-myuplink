@@ -25,5 +25,22 @@
     "name": "Adde Strömberg",
     "email": "adde@upperfield.se"
   },
-  "brandColor": "#b13c3f"
+  "brandColor": "#b13c3f",
+  "tags": {
+    "en": [
+      "climate",
+      "heatpump",
+      "nibe",
+      "myuplink"
+    ]
+  },
+  "source": "https://github.com/addestromberg/se.studio13.nibe-myuplink",
+  "support": "mailto:adde@upperfield.se",
+  "contributors": {
+    "developers": [
+      {
+        "name": "Adde Stromberg"
+      }
+    ]
+  }
 }

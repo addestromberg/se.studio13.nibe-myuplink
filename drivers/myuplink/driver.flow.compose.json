@@ -1,0 +1,15 @@
+{
+    "triggers": [
+      {
+        "id": "hwBoost_changed",
+        "title": { "en": "Hot-Water Boost Changed", "sv": "Skiftar Mer varmvatten" },
+        "tokens": [
+            {
+              "name": "hwBoost",
+              "type": "boolean",
+              "title": {"en": "Hotwater Boost Changed"}
+            }
+          ]
+      }
+    ]
+}
