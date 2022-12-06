@@ -32,6 +32,12 @@
       "heatpump",
       "nibe",
       "myuplink"
+    ],
+    "sv": [
+      "klimat",
+      "värmepump",
+      "nibe",
+      "myuplink"
     ]
   },
   "source": "https://github.com/addestromberg/se.studio13.nibe-myuplink",
