@@ -1,0 +1,21 @@
+## Param#, Name, Unit, Decimals
+--- 4, Current Outdoor Temperature, °C, 0.1
+-- 10, Return Line, °C, 0.1
+-- 12, Hotwater Charging, °C, 0.1
+-- 13, Brine In, °C, 0.1
+-- 14, Brine Out, °C, 0.1
+-- 15, Condenser, °C, 0.1
+-- 16, Discharge, °C, 0.1
+-- 17, Liquid Line, °C, 0.1
+-- 19, Suction Gas, °C, 0.1
+-- 58, Flow sensor, l/m, 0.1
+-- 781, Degree Minutes, DM, 0.1
+-- 1708, Calculated Supply System 1, °C, 0.1
+-- 1975, Heating Media Pump Speed, %, 1
+-- 1977, Brine Pump Speed, %, 1
+-- 2716, Hot water, including int. add. heat, kWh, 0.1
+-- 2717, Heating, including, int. add. heat, kWh, 0.1
+-- 2720, Hotwater - Compressor Only, kWh, 0.1
+-- 2721, Heating - Compressor Only, kWh, 0.1
+-- 3671, Curve Offset System 1, , 1,
+-- 5927, Current Compressor Frequency, Hz, 1   

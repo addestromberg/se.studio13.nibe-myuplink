@@ -1,0 +1,25 @@
+{
+    "page": 1,
+    "itemsPerPage": 2,
+    "numItems": 1,
+    "systems": [
+      {
+        "systemId": "b8a8bb55-d26e-4f2a-b1fa-cf518772a5dc",
+        "name": "Hem",
+        "securityLevel": "admin",
+        "hasAlarm": false,
+        "country": "Sweden",
+        "devices": [
+          {
+            "id": "U223142432663ec09-e45d-4132-9122-2e46b4f7eb03",
+            "connectionState": "Connected",
+            "currentFwVersion": "2.15.9",
+            "product": {
+              "serialNumber": "06546522327005",
+              "name": "NIBE S1255-6 CU EM 3X400V"
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,10 @@
+{
+    "type": "number",
+    "title": { "en": "Energy Hotwater Compressor", "sv": "Energi Varmvatten Compressor" },
+    "uiComponent": null,
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "kWh" },
+    "step": 0.1
+  }

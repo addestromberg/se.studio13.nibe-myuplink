@@ -1,0 +1,11 @@
+{
+    "type": "number",
+    "title": { "en": "Supplyline Temperature", "sv": "Framföringstemperatur" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "°C" },
+    "step": 0.1,
+    "icon": "/assets/thermometer.svg"
+  }

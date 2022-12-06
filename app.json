@@ -1,0 +1,573 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "se.studio13.nibe-myuplink",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Nibe myUplink"
+  },
+  "description": {
+    "en": "Connect you Nibe devices that uses the myUplink API."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Adde Strömberg",
+    "email": "adde@upperfield.se"
+  },
+  "brandColor": "#b13c3f",
+  "drivers": [
+    {
+      "id": "myuplink",
+      "name": {
+        "en": "myUplink"
+      },
+      "class": "other",
+      "capabilities": [
+        "hwBoost",
+        "smartPriceAdaption",
+        "priority",
+        "measure_power",
+        "internalAddon",
+        "feedTemperature",
+        "hwTopTemperature",
+        "brineInTemperature",
+        "brineOutTemperature",
+        "brinePumpSpeed",
+        "calculatedSupplyTemperature",
+        "condenserTemperature",
+        "currentCompressorFrequency",
+        "degreeMinutes",
+        "dischargeTemperature",
+        "flowSensor",
+        "heatingEnergyCompressor",
+        "heatingEnergyIncludingAddon",
+        "heatingMediaPumpSpeed",
+        "hwChargingTemperature",
+        "hwEnergyCompressor",
+        "hwEnergyIncludingAddon",
+        "liquidLineTemperature",
+        "outdoorTemperature",
+        "returnLineTemperature",
+        "suctionGasTemperature"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/myuplink/assets/images/small.png",
+        "large": "/drivers/myuplink/assets/images/large.png",
+        "xlarge": "/drivers/myuplink/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "settings": []
+    }
+  ],
+  "capabilities": {
+    "brineInTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Brine In Temperature",
+        "sv": "Köldbärare Temp Framföring"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "brineOutTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Brine Out Temperature",
+        "sv": "Köldbärare Temp retur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "brinePumpSpeed": {
+      "type": "number",
+      "title": {
+        "en": "Brine Pump Speed",
+        "sv": "Hastighet Köldbärarpump"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "%"
+      },
+      "step": 1
+    },
+    "calculatedSupplyTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Setpoint Supply Line Temperature",
+        "sv": "Börvärde Framföringstemp"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "condenserTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Condenser Temperature",
+        "sv": "Kondensor temperatur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "currentCompressorFrequency": {
+      "type": "number",
+      "title": {
+        "en": "Compressor Speed",
+        "sv": "Hastighet Kompressor"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "Hz"
+      },
+      "step": 1
+    },
+    "degreeMinutes": {
+      "type": "number",
+      "title": {
+        "en": "Degree Minutes",
+        "sv": "Gradminuter"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "DM"
+      },
+      "step": 0.1
+    },
+    "dischargeTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Discharge Temperature",
+        "sv": "Hetgas Temperatur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "feedTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Supplyline Temperature",
+        "sv": "Framföringstemperatur"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1,
+      "icon": "/assets/thermometer.svg"
+    },
+    "flowSensor": {
+      "type": "number",
+      "title": {
+        "en": "Flow Sensor",
+        "sv": "Flödesgivare"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "l/m"
+      },
+      "step": 0.1
+    },
+    "heatingEnergyCompressor": {
+      "type": "number",
+      "title": {
+        "en": "Energy Heating Compressor",
+        "sv": "Energi Uppvärmning Kompressor"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "kWh"
+      },
+      "step": 0.1
+    },
+    "heatingEnergyIncludingAddon": {
+      "type": "number",
+      "title": {
+        "en": "Energy Heating incl. Addon",
+        "sv": "Energi Uppvärmning inkl. tillsats"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "kWh"
+      },
+      "step": 0.1
+    },
+    "heatingMediaPumpSpeed": {
+      "type": "number",
+      "title": {
+        "en": "Heating Media Pump Speed",
+        "sv": "Hastighet Circpump Uppvärmning"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "%"
+      },
+      "step": 1
+    },
+    "hwBoost": {
+      "type": "boolean",
+      "title": {
+        "en": "Hot-water Boost",
+        "sv": "Mer varmvatten"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": false,
+      "icon": "/assets/hw_boost.svg"
+    },
+    "hwChargingTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Hotwater Charging Temperature",
+        "sv": "Laddningstemp Varmvatten"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "hwEnergyCompressor": {
+      "type": "number",
+      "title": {
+        "en": "Energy Hotwater Compressor",
+        "sv": "Energi Varmvatten Compressor"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "kWh"
+      },
+      "step": 0.1
+    },
+    "hwEnergyIncludingAddon": {
+      "type": "number",
+      "title": {
+        "en": "Energy Hotwater incl. Addon",
+        "sv": "Energi Varmvatten inkl. tillsats"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "kWh"
+      },
+      "step": 0.1
+    },
+    "hwTopTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Hotwater Temperature",
+        "sv": "Varmvatten Temperatur"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1,
+      "icon": "/assets/hotwater_temperature.svg"
+    },
+    "internalAddon": {
+      "type": "enum",
+      "title": {
+        "en": "Internal Add-On",
+        "sv": "Eltillsats"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Alarm",
+            "sv": "Larm"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Alarm",
+            "sv": "Larm"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Active",
+            "sv": "Till"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Off",
+            "sv": "Från"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Blocked",
+            "sv": "Blockerad"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Off",
+            "sv": "Från"
+          }
+        },
+        {
+          "id": "6",
+          "title": {
+            "en": "Active",
+            "sv": "Till"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "icon": "/assets/internal_addon.svg"
+    },
+    "liquidLineTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Liquid Line temperature",
+        "sv": "Vätskeledning Temperatur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "outdoorTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Outdoor Temperature",
+        "sv": "Utetemperatur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "priority": {
+      "type": "enum",
+      "title": {
+        "en": "Priority",
+        "sv": "Prioritet"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Off",
+            "sv": "Av"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Heating",
+            "sv": "Uppvärmning"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Cooling",
+            "sv": "Kylning"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Hot Water",
+            "sv": "Varmvatten"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Pool",
+            "sv": "Pool"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Pool 2",
+            "sv": "Pool 2"
+          }
+        },
+        {
+          "id": "6",
+          "title": {
+            "en": "Preheating",
+            "sv": "Förvärmer"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "icon": "/assets/priority.svg"
+    },
+    "returnLineTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Return Line Temperature",
+        "sv": "Temperatur Retur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
+    "smartPriceAdaption": {
+      "type": "boolean",
+      "title": {
+        "en": "Smart-price Adaption",
+        "sv": "Smart-price Adaption"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": false,
+      "icon": "/assets/smart_price_adaption.svg"
+    },
+    "suctionGasTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Suctiongas Temperature",
+        "sv": "Suggas Temperatur"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    }
+  }
+}

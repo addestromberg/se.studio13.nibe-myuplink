@@ -1,0 +1,11 @@
+{
+    "type": "number",
+    "title": { "en": "Hotwater Temperature", "sv": "Varmvatten Temperatur" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "°C" },
+    "step": 0.1,
+    "icon": "/assets/hotwater_temperature.svg"
+  }

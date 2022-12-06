@@ -1,0 +1,10 @@
+{
+    "type": "number",
+    "title": { "en": "Liquid Line temperature", "sv": "Vätskeledning Temperatur" },
+    "uiComponent": null,
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "°C" },
+    "step": 0.1
+  }

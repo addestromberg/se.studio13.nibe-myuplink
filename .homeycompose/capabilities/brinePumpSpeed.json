@@ -1,0 +1,10 @@
+{
+    "type": "number",
+    "title": { "en": "Brine Pump Speed", "sv": "Hastighet Köldbärarpump" },
+    "uiComponent": null,
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "%" },
+    "step": 1
+  }

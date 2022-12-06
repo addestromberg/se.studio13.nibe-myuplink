@@ -1,0 +1,17 @@
+{
+    "type": "enum",
+    "title": { "en": "Internal Add-On", "sv": "Eltillsats" },
+    "values": [{ "id": "0", "title": { "en": "Alarm", "sv": "Larm" } },
+              { "id": "1", "title": { "en": "Alarm", "sv": "Larm"  } },
+              { "id": "2", "title": { "en": "Active", "sv": "Till"  } },
+              { "id": "3", "title": { "en": "Off", "sv": "Från"  } },
+              { "id": "4", "title": { "en": "Blocked", "sv": "Blockerad"  } },
+              { "id": "5", "title": { "en": "Off", "sv": "Från"  } },
+              { "id": "6", "title": { "en": "Active", "sv": "Till"  } }
+             ],
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "icon": "/assets/internal_addon.svg"
+}

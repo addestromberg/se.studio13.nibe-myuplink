@@ -1,0 +1,40 @@
+{
+    "id": "U223142432663ec09-e45d-4132-9122-2e46b4f7eb03",
+    "connectionState": "Connected",
+    "firmware": {
+      "currentFwVersion": "2.15.9",
+      "desiredFwVersion": "2.15.9"
+    },
+    "product": {
+      "serialNumber": "06546522327005",
+      "name": "NIBE S1255-6 CU EM 3X400V"
+    },
+    "availableFeatures": {
+      "settings": true,
+      "reboot": true,
+      "forcesync": true,
+      "forceUpdate": true,
+      "requestUpdate": false,
+      "resetAlarm": true,
+      "triggerEvent": true,
+      "getMenu": true,
+      "getMenuChain": true,
+      "getGuideQuestion": true,
+      "sendHaystack": true,
+      "setSmartMode": true,
+      "setAidMode": true,
+      "getZones": true,
+      "processIntent": true,
+      "boostHotWater": false,
+      "boostVentilation": false,
+      "getScheduleConfig": true,
+      "getScheduleModes": true,
+      "getScheduleWeekly": true,
+      "getScheduleVacation": false,
+      "setScheduleModes": true,
+      "setScheduleWeekly": true,
+      "setScheduleOverride": true,
+      "setScheduleVacation": false,
+      "setVentilationMode": false
+    }
+  }

@@ -1,0 +1,11 @@
+{
+    "type": "boolean",
+    "title": { "en": "Smart-price Adaption",
+               "sv": "Smart-price Adaption"},
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "uiComponent": "toggle",
+    "uiQuickAction": false,
+    "icon": "/assets/smart_price_adaption.svg"
+}

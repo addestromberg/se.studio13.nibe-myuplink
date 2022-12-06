@@ -1,0 +1,10 @@
+{
+    "type": "number",
+    "title": { "en": "Energy Heating Compressor", "sv": "Energi Uppvärmning Kompressor" },
+    "uiComponent": null,
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "kWh" },
+    "step": 0.1
+  }

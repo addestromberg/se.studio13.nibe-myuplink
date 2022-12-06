@@ -1,0 +1,17 @@
+{
+    "type": "enum",
+    "title": { "en": "Priority", "sv": "Prioritet" },
+    "values": [{ "id": "0", "title": { "en": "Off", "sv": "Av" } },
+              { "id": "1", "title": { "en": "Heating", "sv": "Uppvärmning"  } },
+              { "id": "2", "title": { "en": "Cooling", "sv": "Kylning"  } },
+              { "id": "3", "title": { "en": "Hot Water", "sv": "Varmvatten"  } },
+              { "id": "4", "title": { "en": "Pool", "sv": "Pool"  } },
+              { "id": "5", "title": { "en": "Pool 2", "sv": "Pool 2"  } },
+              { "id": "6", "title": { "en": "Preheating", "sv": "Förvärmer"  } }
+             ],
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "icon": "/assets/priority.svg"
+  }

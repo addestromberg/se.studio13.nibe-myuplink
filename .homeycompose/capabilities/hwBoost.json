@@ -1,0 +1,11 @@
+{
+    "type": "boolean",
+    "title": { "en": "Hot-water Boost",
+               "sv": "Mer varmvatten"},
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "uiComponent": "toggle",
+    "uiQuickAction": false,
+    "icon": "/assets/hw_boost.svg"
+}
