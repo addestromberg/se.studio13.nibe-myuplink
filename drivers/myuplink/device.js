@@ -7,6 +7,10 @@ const POLL_INTERVAL = 60; // In seconds
 class MyUplinkDevice extends OAuth2Device {
 
   async onOAuth2Init() {
+
+    // Add new capability to users who already installed.
+    if (!this.hasCapability('priorityLog')) this.addCapability('priorityLog');
+
     // Setup a timer and fetch data from API at x seconds interval
     this.fetchIntervalIndex = setInterval(async () => {
       await this.getParameters();
@@ -51,6 +55,7 @@ class MyUplinkDevice extends OAuth2Device {
           break;
         case '14950':
           this.setCapabilityValue('priority', String(capability.value));
+          this.setCapabilityValue('priorityLog', capability.value)
           break;
         case '22130':
           this.setCapabilityValue('measure_power', capability.value);

@@ -1,5 +1,10 @@
 {
   "1.0.0": {
-    "en": "Initial release"
+    "en": "Initial release",
+    "se": "Första release"
+  },
+  "1.1.0": {
+    "en": "Added the Priority value as a second capability as number, so it is possible to access from insights and if you log outside, ie. Grafana.",
+    "sv": "Lade till ytterligare en Prioritet egenskap i form av nummer, så det finns i insight eller om du t ex loggar i Grafana."
   }
 }

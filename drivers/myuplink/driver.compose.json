@@ -30,7 +30,8 @@
     "liquidLineTemperature",
     "outdoorTemperature",
     "returnLineTemperature",
-    "suctionGasTemperature"
+    "suctionGasTemperature",
+    "priorityLog"
   ],
   "platforms": [
     "local"

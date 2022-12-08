@@ -1,0 +1,9 @@
+{
+    "type": "number",
+    "title": { "en": "Priority to Log", "sv": "Prioritet till Log" },
+    "uiComponent": null,
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "step": 1
+  }
