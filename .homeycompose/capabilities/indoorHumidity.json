@@ -1,0 +1,10 @@
+{
+    "type": "number",
+    "title": { "en": "Indoor Humidity", "sv": "Luftfuktighet Inomhus" },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "insights": true,
+    "units": { "en": "%RH" },
+    "step": 0.1
+  }

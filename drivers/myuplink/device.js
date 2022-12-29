@@ -10,6 +10,9 @@ class MyUplinkDevice extends OAuth2Device {
 
     // Add new capability to users who already installed.
     if (!this.hasCapability('priorityLog')) this.addCapability('priorityLog');
+    if (!this.hasCapability('smartHomeMode')) this.addCapability('smartHomeMode');
+    if (!this.hasCapability('indoorTemperature')) this.addCapability('indoorTemperature');
+    if (!this.hasCapability('indoorHumidity')) this.addCapability('indoorHumidity');
 
     // Setup a timer and fetch data from API at x seconds interval
     this.fetchIntervalIndex = setInterval(async () => {
@@ -37,7 +40,22 @@ class MyUplinkDevice extends OAuth2Device {
       .then(async (result) => {
         this.updateValues(result);
       })
+      .then(this.getSmartHomeMode())
       .catch((error) => this.log(error));
+  }
+
+  /**
+   * Get's current smarthome mode from server
+   * Update picker capability and convert to numeric capability for logging.
+   */
+  async getSmartHomeMode() {
+    this.log(this.getStore('systemId'));
+    // Get smarthomeMode
+    await this.oAuth2Client.getSmartHomeMode(this.getStoreValue('systemId'))
+    .then(async (result) => {
+      this.setCapabilityValue('smartHomeMode', result.smartHomeMode)
+    })
+    .catch((error) => this.log(error));
   }
 
   /**
@@ -126,6 +144,12 @@ class MyUplinkDevice extends OAuth2Device {
         case '5927':
           this.setCapabilityValue('currentCompressorFrequency', capability.value);
           break;
+        case '48351':
+          this.setCapabilityValue('indoorTemperature', capability.value);
+          break;
+        case '48501':
+          this.setCapabilityValue('indoorHumidity', capability.value);
+          break;
         default:
           break;
       }
@@ -153,6 +177,17 @@ class MyUplinkDevice extends OAuth2Device {
         .then(async (result) => {
           if (result.status === 200) this.log('Updated value');
         }).catch(this.log('Something went wrong setting Smartprice adaption.'));
+    });
+
+    // Smarthome Mode
+    await this.registerCapabilityListener('smartHomeMode', async (value) => {
+      this.oAuth2Client.setSmartHomeMode(this.getStoreValue('systemId'), value)
+        .then(async (result) => {
+          this.log(result);
+          if (result.status === 200) this.log('Updated SmartHomeMode value');
+        }).catch((error) => {
+          this.log(error);
+        });
     });
   }
 

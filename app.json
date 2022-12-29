@@ -422,6 +422,36 @@
       "step": 0.1,
       "icon": "/assets/hotwater_temperature.svg"
     },
+    "indoorHumidity": {
+      "type": "number",
+      "title": {
+        "en": "Indoor Humidity",
+        "sv": "Luftfuktighet Inomhus"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "%RH"
+      },
+      "step": 0.1
+    },
+    "indoorTemperature": {
+      "type": "number",
+      "title": {
+        "en": "Indoor Temperature",
+        "sv": "Temperatur Inomhus"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "units": {
+        "en": "°C"
+      },
+      "step": 0.1
+    },
     "internalAddon": {
       "type": "enum",
       "title": {
@@ -604,6 +634,48 @@
         "en": "°C"
       },
       "step": 0.1
+    },
+    "smartHomeMode": {
+      "type": "enum",
+      "title": {
+        "en": "SmartHome Mode",
+        "sv": "SmartHome Läge"
+      },
+      "values": [
+        {
+          "id": "Default",
+          "title": {
+            "en": "Default",
+            "sv": "Standard"
+          }
+        },
+        {
+          "id": "Normal",
+          "title": {
+            "en": "Normal",
+            "sv": "Normal"
+          }
+        },
+        {
+          "id": "Away",
+          "title": {
+            "en": "Away",
+            "sv": "Borta"
+          }
+        },
+        {
+          "id": "Vacation",
+          "title": {
+            "en": "Vacation",
+            "sv": "Semester"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "icon": "/assets/priority.svg"
     },
     "smartPriceAdaption": {
       "type": "boolean",

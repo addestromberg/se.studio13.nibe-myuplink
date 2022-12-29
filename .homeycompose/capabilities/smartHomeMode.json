@@ -1,0 +1,15 @@
+{
+    "type": "enum",
+    "title": { "en": "SmartHome Mode", "sv": "SmartHome Läge" },
+    "values": [{ "id": "Default", "title": { "en": "Default", "sv": "Standard" } },
+              { "id": "Normal", "title": { "en": "Normal", "sv": "Normal"  } },
+              { "id": "Away", "title": { "en": "Away", "sv": "Borta"  } },
+              { "id": "Vacation", "title": { "en": "Vacation", "sv": "Semester"  } }
+             ],
+    "uiComponent": "picker",
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "icon": "/assets/priority.svg"
+  }
+
